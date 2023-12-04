@@ -10,9 +10,10 @@ body {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  /* padding-right: 80px; */
-  /* padding-left: 80px; */
+  justify-content: space-around;
+}
+.logo {
+  padding-right:650px;
 }
 .logo img {
   margin-top: 20px;
@@ -20,45 +21,145 @@ nav {
   height: 150px;
 }
 .first-button {
-  margin-right: -600px;
-  border: 1px solid linear-gradient(to right bottom, #00bbc9, #00f490, #00bbc9);
-  padding: 20px 40px;
+  margin-right: 15px;
   border-radius: 5px;
   position: relative;
-  background-image: linear-gradient(to right bottom, #00bbc9, #00f490, #00bbc9);
   transition: all 0.8s;
+  position: ;
+}
+.first-button button {
+  font-size: 20px;
 }
 
-a {
+.first-button a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 244, 244);
 }
-/* .drop-down { */
-  display: none;
+.first-button button:hover {
+  background-color: rgba(0, 188, 201, 0.462);
+}
+
+.second-button {
+  padding-top: 20px;
+  width: 150px;
+  height: 70px;
+  border-radius: 5px;
+  border: 0.5px solid #fff;
+  transition: all 0.8s;
+  text-align: center;
+}
+
+.second-button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.first-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+
+.text-main h1 {
+  font-size: 5rem;
+  color: #fff;
+  font-family: "Libre Bodoni", serif;
+  font-weight: bolder;
+  
+}
+.text-main p {
+  color: #fff;
+  font-size: 40px;
+}
+.button-main {
+  padding-top: 15px;
+  width: 160px;
+  height: 60px;
+  border-radius: 5px;
+  border: 0.5px solid #fff;
+  transition: all 0.8s;
+  text-align: center;
+}
+.button-main a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+.button-main:hover {
+  background-color: rgba(0, 188, 201, 0.462);
+  cursor: pointer;
+}
+.img-main {
+  width: 400px;
+  height: 400px;
+  padding-top: 100px;
+}
+.second-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.intro {
+  border: 1px solid black;
+  height: 300px;
+  padding: 50px 60px 60px 60px ;
+  background-color: #fff;
+  margin-left: 20px;
+  border-radius: 0 5px 5px 0;
+}
+.intro p a {
+  text-decoration: none;
+  color: #00bbc9;
+  font-weight: bolder;
+}
+.intro p a:hover {
+  text-decoration: underline;
+  color: blue;
+  opacity: 0.8;
+}
+.mr-dan img {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px 0 0 5px;
+}
+
+.footer {
+  margin-top:40px ;
+  margin-bottom: 40px;
+  display:grid ;
+  grid-template-columns: auto auto auto;
+  gap: 25px;
+}
+.first-card , .second-card , .third-card{
   border: 1px solid #fff;
   border-radius: 5px;
-  padding: 10px 40px;
-  margin-bottom: 5px;
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.15) , -2px 5px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s;
 }
-/* .drop-menu { */
-  position: absolute;
-  margin-top: 25px;
-  right: 10px;
-  transition: all 0.8s;
+.first-text , .second-text , .third-text {
+  background-color: #fff;
+  padding: 20px;
+  font-weight: lighter;
 }
-.first-button:hover .drop-down {
-  display: block;
-}
-.first-button:hover {
-  border: 2px solid #fff;
-}
-.second-button {
-  border: 1px solid linear-gradient(to right bottom , #00bbc9, #00f490 ,#00bbc9 );
-  padding: 20px 40px;
+.footer-button {
+  width: 140px;
+  padding: 5px;
   border-radius: 5px;
-  background-image: linear-gradient(to right bottom, #00bbc9, #00f490, #00bbc9);
-  transition: all 0.8s;
+  border: 1px solid rgb(0, 94, 201);
+  background-color: #00bbc9;
+  color: #fff;
 }
-.second-button:hover {
-    border: 2px solid #fff;
+.first-card:hover {
+  transform: scale(1.1);
 }
+.second-card:hover {
+  transform: scale(1.1);
+}
+.third-card:hover {
+  transform: scale(1.1);
+}
+
